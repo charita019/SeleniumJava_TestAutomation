@@ -9,7 +9,7 @@ public class Employee {
 	Employee(String name, int age, String edept){
 		this.name=name;
 		this.age=age;
-		this.dept=dept;
+		//this.dept=dept;
 		dept=edept;
 	}
 

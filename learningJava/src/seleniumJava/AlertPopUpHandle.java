@@ -32,10 +32,5 @@ public class AlertPopUpHandle {
 		}
 		
 		alert.accept();
-		
-		
-		
-
 	}
-
 }
