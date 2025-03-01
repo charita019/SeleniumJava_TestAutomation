@@ -8,51 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Free CRM Application Automation Test Suite</th></tr>
-<tr><td><a href="#t0">Free CRM App Test Cases</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">72,333</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">13,004</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Free CRM Application Automation Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Free CRM App Test Cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.crm.qa.testcases.HomePageTest</td><td><a href="#m0">verifyContactsLinkTest</a></td><td rowspan="1">1740676010368</td><td rowspan="1">6</td></tr><tr class="failedeven"><td><a href="#m1">verifyHomePageTitleTest</a></td><td rowspan="1">1740676010267</td><td rowspan="1">7</td></tr><tr><th colspan="4">Free CRM App Test Cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m2">selectMultipleContactsTest</a></td><td rowspan="1">1740676047637</td><td rowspan="1">3307</td></tr><tr class="passedeven"><td><a href="#m3">selectSingleContactsTest</a></td><td rowspan="1">1740676032675</td><td rowspan="1">2101</td></tr><tr class="passedeven"><td><a href="#m4">verifyContactsPageLabel</a></td><td rowspan="1">1740676022199</td><td rowspan="1">32</td></tr><tr class="passedodd"><td rowspan="1">com.crm.qa.testcases.HomePageTest</td><td><a href="#m5">verifyLoggedInUserNameTest</a></td><td rowspan="1">1740676010277</td><td rowspan="1">90</td></tr><tr class="passedeven"><td rowspan="2">com.crm.qa.testcases.LoginPageTest</td><td><a href="#m6">loginPageTitleTest</a></td><td rowspan="1">1740675997304</td><td rowspan="1">4881</td></tr><tr class="passedeven"><td><a href="#m7">loginTest</a></td><td rowspan="1">1740676005519</td><td rowspan="1">4542</td></tr><tr class="passedodd"><td rowspan="2">com.crm.qa.testcases.MainPageTest</td><td><a href="#m8">loginLinkClickTest</a></td><td rowspan="1">1740675993810</td><td rowspan="1">252</td></tr><tr class="passedodd"><td><a href="#m9">mainPageTitleTest</a></td><td rowspan="1">1740675989572</td><td rowspan="1">168</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.crm.qa.testcases.CreateNewContactPageTest</td><td><a href="#m0">validateCreateNewContact</a></td><td rowspan="1">1740857512416</td><td rowspan="1">1315</td></tr></tbody>
 </table>
-<h2>Free CRM App Test Cases</h2><h3 id="m0">com.crm.qa.testcases.HomePageTest#verifyContactsLinkTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, actions {actions=[org.openqa.selenium.interactions.Sequence@42210be1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.141, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50388}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50388/devtoo..., se:cdpVersion: 133.0.6943.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:609)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:598)
-	at com.crm.qa.pages.HomePage.clickContactsMenuLink(HomePage.java:55)
-	at com.crm.qa.testcases.HomePageTest.verifyContactsLinkTest(HomePageTest.java:54)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.crm.qa.testcases.HomePageTest#verifyHomePageTitleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.141, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50388}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50388/devtoo..., se:cdpVersion: 133.0.6943.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:310)
-	at com.crm.qa.pages.HomePage.validateHomePageTitle(HomePage.java:36)
-	at com.crm.qa.testcases.HomePageTest.verifyHomePageTitleTest(HomePageTest.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.crm.qa.testcases.ContactsPageTest#selectMultipleContactsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.crm.qa.testcases.ContactsPageTest#selectSingleContactsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.crm.qa.testcases.ContactsPageTest#verifyContactsPageLabel</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.crm.qa.testcases.HomePageTest#verifyLoggedInUserNameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.crm.qa.testcases.LoginPageTest#loginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.crm.qa.testcases.LoginPageTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.crm.qa.testcases.MainPageTest#loginLinkClickTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.crm.qa.testcases.MainPageTest#mainPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.crm.qa.testcases.CreateNewContactPageTest#validateCreateNewContact</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

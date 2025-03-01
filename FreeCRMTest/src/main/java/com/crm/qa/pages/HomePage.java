@@ -2,6 +2,7 @@ package com.crm.qa.pages;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -52,6 +53,20 @@ public class HomePage extends TestBase{
 		for(WebElement link : navMenuLinks) {
 			if(link.getText().equalsIgnoreCase(menuName)) {
 				link.click();
+				break;
+			}
+		}
+		clickOutside.click();
+		return new ContactsPage();
+	}
+	
+	public ContactsPage clickAddIcon(String menuName) {
+		Actions action = new Actions(driver);
+		action.moveToElement(navmenu).build().perform();
+		for (int i = 0;i<navMenuLinks.size();i++) {
+			String menulinkName = navMenuLinks.get(i).getText();
+			if(menulinkName.equalsIgnoreCase(menuName)) {
+				navMenuLinks.get(i).findElement(By.tagName("button")).click();
 				break;
 			}
 		}

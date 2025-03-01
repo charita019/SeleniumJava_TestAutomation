@@ -5,9 +5,9 @@
     <classes>
       <class name="com.crm.qa.testcases.HomePageTest">
         <methods>
-          <include name="tearDown"/>
           <include name="verifyContactsLinkTest"/>
           <include name="setUp"/>
+          <include name="tearDownTest"/>
           <include name="verifyHomePageTitleTest"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.HomePageTest -->

@@ -1,11 +1,14 @@
 package com.crm.qa.util;
 
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.crm.qa.base.TestBase;
 
@@ -33,5 +36,10 @@ public class TestUtil extends TestBase	{
 	public void executeUsingJavaScript(WebDriver driver, WebElement element) {
 		js=(JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", element);
+	}
+	
+	public void waitForPageLoad() {
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(EXPLICIT_WAIT));
+		wait.until(ExpectedConditions.urlContains("ui.cogmento.com"));
 	}
 }

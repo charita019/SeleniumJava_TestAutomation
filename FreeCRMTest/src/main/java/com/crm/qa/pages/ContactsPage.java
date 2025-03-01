@@ -18,7 +18,11 @@ public class ContactsPage extends TestBase {
 	// Not a good solution
 //	@FindBy(xpath = "//a[contains(text(),'J S')]/parent::td//preceding-sibling::td//input[@name='id']")
 //	WebElement checkBox;
-
+	
+	@FindBy (xpath = "//button[contains(text(),'Create')]")
+	WebElement createBtn;
+	
+	
 	public ContactsPage() {
 		PageFactory.initElements(driver, this);
 		testUtil = new TestUtil();
@@ -36,6 +40,15 @@ public class ContactsPage extends TestBase {
 		} catch (Exception e) {
 			testUtil.executeUsingJavaScript(driver,checkbox);
 		}
+	}
+	
+	public boolean createButtonVisibility() {
+		return createBtn.isDisplayed();
+	}
+	
+	public NewContactPage clickCreateButton() {
+		createBtn.click();
+		return new NewContactPage();
 	}
 
 }

@@ -2,7 +2,7 @@ package com.crm.qa.testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.crm.qa.base.TestBase;
@@ -24,7 +24,7 @@ public class HomePageTest extends TestBase{
 		super();
 	}
 	
-	@BeforeTest
+	@BeforeMethod
 	public void setUp() {
 		initialization();
 		mainPage = new MainPage();
@@ -37,7 +37,7 @@ public class HomePageTest extends TestBase{
 	
 	@Test (priority = 1)
 	public void verifyHomePageTitleTest() {
-		
+		testUtil.waitForPageLoad();
 		String homePageTitle = homePage.HomePageTitle();
 		Assert.assertEquals(homePageTitle, "Cogmento CRM", "Home Page Title not matched");
 	}
@@ -52,6 +52,11 @@ public class HomePageTest extends TestBase{
 	@Test (priority = 3)
 	public void verifyContactsLinkTest() {
 		contactsPage = homePage.clickContactsMenuLink("Contacts");
+	}
+	
+	@Test (priority = 4)
+	public void verifyAddIconClick() {
+		contactsPage= homePage.clickAddIcon("Contacts");
 	}
 	
 	@AfterTest
