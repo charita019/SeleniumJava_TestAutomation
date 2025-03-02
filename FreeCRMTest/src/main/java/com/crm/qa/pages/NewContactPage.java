@@ -11,13 +11,13 @@ import com.crm.qa.base.TestBase;
 public class NewContactPage extends TestBase{
 	
 	@FindBy (name = "first_name")
-	WebElement firstNameInput;
+	WebElement firstName;
 	
 	@FindBy (name = "last_name")
-	WebElement lastNameInput;
+	WebElement lastName;
 	
 	@FindBy (xpath = "//input[contains(@placeholder,'Email address')]")
-	WebElement emailAddrInput;
+	WebElement emailAddr;
 	
 	@FindBy (xpath = "//div[@name='category']")
 	List<WebElement> categorySelect;
@@ -30,9 +30,9 @@ public class NewContactPage extends TestBase{
 	}
 	
 	public void createNewContact(String fname,String lname, String eMail) {
-		firstNameInput.sendKeys(fname);
-		lastNameInput.sendKeys(lname);
-		emailAddrInput.sendKeys(eMail);
+		firstName.sendKeys(fname);
+		lastName.sendKeys(lname);
+		emailAddr.sendKeys(eMail);
 		
 //		for(int i = 0; i<categorySelect.size();i++) {
 //			if(categorySelect.get(i).getText().equals(catName)) {
