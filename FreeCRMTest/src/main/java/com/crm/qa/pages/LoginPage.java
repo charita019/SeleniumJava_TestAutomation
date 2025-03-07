@@ -5,10 +5,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.crm.qa.base.TestBase;
+import com.crm.qa.util.TestUtil;
 
 public class LoginPage extends TestBase{
 	
 	MainPage mainPage;
+	TestUtil testUtil;
 	
 	//Objects and Methods of Login Page
 	//1. define object repository / page factory
@@ -19,7 +21,7 @@ public class LoginPage extends TestBase{
 	@FindBy(name = "password")
 	WebElement password;
 	
-	@FindBy(xpath = "//div[contains(text(),'Login')]")
+	@FindBy(xpath = "//div[contains(text(),'Logins')]")
 	WebElement loginBtn;
 	
 	@FindBy (xpath = "//a[text()='Sign Up']")
@@ -31,6 +33,7 @@ public class LoginPage extends TestBase{
 	//Initializing the Page Objects:
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
+		testUtil = new TestUtil();
 	}
 	
 	//Actions:
