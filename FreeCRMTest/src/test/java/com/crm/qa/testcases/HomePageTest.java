@@ -11,6 +11,7 @@ import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 import com.crm.qa.pages.MainPage;
 import com.crm.qa.util.TestUtil;
+import com.crm.qa.util.TestUtil.waitEnum;
 
 public class HomePageTest extends TestBase{
 	
@@ -37,7 +38,7 @@ public class HomePageTest extends TestBase{
 	
 	@Test (priority = 1)
 	public void verifyHomePageTitleTest() {
-		testUtil.waitForPageLoad();
+		testUtil.explicitWaitFor(waitEnum.waitForUrl);
 		String homePageTitle = homePage.HomePageTitle();
 		Assert.assertEquals(homePageTitle, "Cogmento CRM", "Home Page Title not matched");
 	}

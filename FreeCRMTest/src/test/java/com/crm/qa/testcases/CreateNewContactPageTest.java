@@ -10,19 +10,23 @@ import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 import com.crm.qa.pages.MainPage;
 import com.crm.qa.pages.NewContactPage;
+import com.crm.qa.util.ExcelDataProvider;
+import com.crm.qa.util.TestUtil;
+import com.crm.qa.util.TestUtil.waitEnum;
 
-public class CreateNewContactPageTest extends TestBase{
-	
+public class CreateNewContactPageTest extends TestBase {
+
 	MainPage mainPage;
 	LoginPage loginPage;
 	HomePage homePage;
 	ContactsPage contactsPage;
 	NewContactPage newContactPage;
-	
-	public CreateNewContactPageTest(){
+	TestUtil testUtil;
+
+	public CreateNewContactPageTest() {
 		super();
 	}
-	
+
 	@BeforeTest
 	public void setUp() {
 		initialization();
@@ -31,16 +35,24 @@ public class CreateNewContactPageTest extends TestBase{
 		contactsPage = new ContactsPage();
 		newContactPage = new NewContactPage();
 		loginPage = mainPage.redirectToLoginPage();
+		testUtil = new TestUtil();
 		homePage = loginPage.login(prop.getProperty("useremail"), prop.getProperty("password"));
 		contactsPage = homePage.clickContactsMenuLink("Contacts");
 		newContactPage = contactsPage.clickCreateButton();
 	}
-	
-	@Test
-	public void validateCreateNewContact() {
-		newContactPage.createNewContact("Qwerty", "Test", "test@test.com");
+
+	@Test(priority = 1, dataProvider = "excelData", dataProviderClass = ExcelDataProvider.class)
+	public void verifyCreateNewContact(String firstName, String lastName, String emailAddress) {
+		System.out
+				.println("First Name - " + firstName + " Last Name - " + lastName + "Email Address - " + emailAddress);
+		newContactPage.createNewContact(firstName, lastName, emailAddress);
+		testUtil.explicitWaitFor(waitEnum.waitForIcon);
+		driver.navigate().back();
 	}
 	
+	//String contactName = contactsPage.contactNameInWebTable(firstName);
+	//Assert.assertEquals(contactName, firstName, "Contact not found in the list!");
+
 	@AfterTest
 	public void tearDown() {
 		driver.quit();

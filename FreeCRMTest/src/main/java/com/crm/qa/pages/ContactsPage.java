@@ -42,6 +42,15 @@ public class ContactsPage extends TestBase {
 		}
 	}
 	
+	public String contactNameInWebTable(String Name) {
+		WebElement dataname = driver.findElement(By.xpath("//div[@class='ui fitted read-only checkbox']/parent::td//following-sibling::td/a[contains(text(),'"+Name+"')]"));
+		System.out.println(dataname.getText());
+		if(dataname.getText().contains(Name)) {
+			return dataname.getText();
+		}
+		return "Not Found";
+	}
+	
 	public boolean createButtonVisibility() {
 		return createBtn.isDisplayed();
 	}
