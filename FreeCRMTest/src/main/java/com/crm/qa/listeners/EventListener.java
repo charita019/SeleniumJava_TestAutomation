@@ -1,10 +1,12 @@
-package com.crm.qa.util;
+package com.crm.qa.listeners;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.events.WebDriverListener;
+
+import com.crm.qa.util.TestUtil;
 
 public class EventListener implements WebDriverListener {
 

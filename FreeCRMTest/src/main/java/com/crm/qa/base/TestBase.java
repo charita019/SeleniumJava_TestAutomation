@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.events.EventFiringDecorator;
 
-import com.crm.qa.util.EventListener;
+import com.crm.qa.listeners.EventListener;
 import com.crm.qa.util.TestUtil;
 
 public class TestBase {
