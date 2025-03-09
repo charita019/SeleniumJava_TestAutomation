@@ -3,14 +3,13 @@
 <suite name="Failed suite [Free CRM Application Automation Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Free CRM App Test Cases(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.HomePageTest">
+      <class name="com.crm.qa.testcases.CreateNewContactPageTest">
         <methods>
-          <include name="verifyContactsLinkTest"/>
           <include name="setUp"/>
-          <include name="tearDownTest"/>
-          <include name="verifyHomePageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="verifyCreateNewContact" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.HomePageTest -->
+      </class> <!-- com.crm.qa.testcases.CreateNewContactPageTest -->
     </classes>
   </test> <!-- Free CRM App Test Cases(failed) -->
 </suite> <!-- Failed suite [Free CRM Application Automation Test Suite] -->

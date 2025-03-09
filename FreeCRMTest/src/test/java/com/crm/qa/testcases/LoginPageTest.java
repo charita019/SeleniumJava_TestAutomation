@@ -1,6 +1,7 @@
 package com.crm.qa.testcases;
 
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -32,6 +33,7 @@ public class LoginPageTest extends TestBase {
 	public void loginPageTitleTest() {
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "Cogmento CRM");
+		Reporter.log(title);
 	}
 
 	@Test (priority = 2)
