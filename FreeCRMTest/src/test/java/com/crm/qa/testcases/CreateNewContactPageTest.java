@@ -41,6 +41,7 @@ public class CreateNewContactPageTest extends TestBase {
 		newContactPage = contactsPage.clickCreateButton();
 	}
 
+	
 	@Test(dataProvider = "excelData", dataProviderClass = ExcelDataProvider.class/*, retryAnalyzer = com.crm.qa.listeners.RetryAnalyzer.class*/)
 	public void verifyCreateNewContact(String firstName, String lastName, String emailAddress) {
 		System.out

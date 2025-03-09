@@ -11,7 +11,7 @@ public class MainPage extends TestBase{
 	
 	TestUtil testUtil;
 		
-	@FindBy(linkText = "LOGIN")
+	@FindBy(linkText = "LOGINs")
 	WebElement loginLink;
 	
 	@FindBy(linkText = "Sign Up")

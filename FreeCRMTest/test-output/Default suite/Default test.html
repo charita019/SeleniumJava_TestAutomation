@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 08 23:16:38 IST 2025</td>
+<td>Started on:</td><td>Mon Mar 10 00:59:35 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>42 seconds (42079 ms)</td>
+<tr><td>Total time:</td><td>30 seconds (30316 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.crm.qa.testcases.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.crm.qa.testcases.LoginPageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Logins&apos;)]&quot;}
+<td title='com.crm.qa.testcases.MainPageTest.loginLinkClickTest()'><b>loginLinkClickTest</b><br>Test class: com.crm.qa.testcases.MainPageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;LOGINs&quot;}
   (Session info: chrome=133.0.6943.142)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [25722589f961fda042a1e75875a71daf, findElement {using=xpath, value=//div[contains(text(),&apos;Logins&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49158}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49158/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 25722589f961fda042a1e75875a71daf
+Command: [95fa989f8fcf38499f74b7ce377f7376, findElement {using=link text, value=LOGINs}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53292}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53292/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 95fa989f8fcf38499f74b7ce377f7376
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -109,12 +109,12 @@ Session ID: 25722589f961fda042a1e75875a71daf
 	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:249)
 	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
 	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:321)
-	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$ocCFVats.findElement(Unknown Source)
+	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$RsKAvhDT.findElement(Unknown Source)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy36.click(Unknown Source)
-	at com.crm.qa.pages.LoginPage.login(LoginPage.java:47)
-	at com.crm.qa.testcases.LoginPageTest.loginTest(LoginPageTest.java:41)
+	at jdk.proxy2/jdk.proxy2.$Proxy38.click(Unknown Source)
+	at com.crm.qa.pages.MainPage.redirectToLoginPage(MainPage.java:30)
+	at com.crm.qa.testcases.MainPageTest.loginLinkClickTest(MainPageTest.java:42)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -143,16 +143,16 @@ Session ID: 25722589f961fda042a1e75875a71daf
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1431699407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1431699407'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Logins&apos;)]&quot;}
+</pre></div><a href='#' onClick='toggleBox("stack-trace674233333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace674233333'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;LOGINs&quot;}
   (Session info: chrome=133.0.6943.142)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [25722589f961fda042a1e75875a71daf, findElement {using=xpath, value=//div[contains(text(),&apos;Logins&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49158}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49158/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 25722589f961fda042a1e75875a71daf
+Command: [95fa989f8fcf38499f74b7ce377f7376, findElement {using=link text, value=LOGINs}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53292}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53292/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 95fa989f8fcf38499f74b7ce377f7376
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -176,12 +176,12 @@ Session ID: 25722589f961fda042a1e75875a71daf
 	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:249)
 	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
 	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$2(WebDriverDecorator.java:321)
-	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$ocCFVats.findElement(Unknown Source)
+	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$RsKAvhDT.findElement(Unknown Source)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy36.click(Unknown Source)
-	at com.crm.qa.pages.LoginPage.login(LoginPage.java:47)
-	at com.crm.qa.testcases.LoginPageTest.loginTest(LoginPageTest.java:41)
+	at jdk.proxy2/jdk.proxy2.$Proxy38.click(Unknown Source)
+	at com.crm.qa.pages.MainPage.redirectToLoginPage(MainPage.java:30)
+	at com.crm.qa.testcases.MainPageTest.loginLinkClickTest(MainPageTest.java:42)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -211,8 +211,8 @@ Session ID: 25722589f961fda042a1e75875a71daf
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>25</td>
-<td>com.crm.qa.testcases.LoginPageTest@45099dd3</td></tr>
+<td>20</td>
+<td>com.crm.qa.testcases.MainPageTest@6c1a5b54</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -223,17 +223,10 @@ Session ID: 25722589f961fda042a1e75875a71daf
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.crm.qa.testcases.LoginPageTest.loginPageTitleTest()'><b>loginPageTitleTest</b><br>Test class: com.crm.qa.testcases.LoginPageTest<br/>
-<a href="#Output-836170750" onClick='toggleBox("Output-836170750", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-836170750" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-836170750">
-Cogmento CRM<br/>
-</div>
-</td>
+<td title='com.crm.qa.testcases.MainPageTest.mainPageTitleTest()'><b>mainPageTitleTest</b><br>Test class: com.crm.qa.testcases.MainPageTest</td>
 <td></td>
-<td>4</td>
-<td>com.crm.qa.testcases.LoginPageTest@45099dd3</td></tr>
+<td>0</td>
+<td>com.crm.qa.testcases.MainPageTest@6c1a5b54</td></tr>
 </table><p>
 </body>
 </html>

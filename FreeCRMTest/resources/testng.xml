@@ -3,6 +3,7 @@
 <suite name = "Free CRM Application Automation Test Suite">
 	<listeners>
 		<listener class-name="com.crm.qa.listeners.AnnotationTransformer"></listener>
+		<listener class-name="com.crm.qa.listeners.CustomListener"></listener>
 	</listeners>
 	<test name="Free CRM App Test Cases">
 		<classes>

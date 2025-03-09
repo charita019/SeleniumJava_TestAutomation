@@ -8,7 +8,7 @@ import org.openqa.selenium.support.events.WebDriverListener;
 
 import com.crm.qa.util.TestUtil;
 
-public class EventListener implements WebDriverListener {
+public class EventListener extends TestUtil implements WebDriverListener {
 
 //	@Override
 //	public void beforeAnyCall(Object target, Method method, Object[] args) {
@@ -38,6 +38,6 @@ public class EventListener implements WebDriverListener {
 	@Override
 	public void onError(Object target, Method method, Object[] args, InvocationTargetException e) {
 		System.out.println("Exception Occurred : " + e );
-		TestUtil.takesScreenShotOnError();
+		//TestUtil.takesScreenShotOnError();
 	}
 }
