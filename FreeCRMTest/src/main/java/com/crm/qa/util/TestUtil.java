@@ -62,7 +62,7 @@ public class TestUtil extends TestBase {
 			TakesScreenshot screenshot = ((TakesScreenshot) driver);
 			File sourceFile = screenshot.getScreenshotAs(OutputType.FILE);
 			String currentDir = System.getProperty("user.dir");
-			FileUtils.copyFile(sourceFile, new File(currentDir + "/FailedScreenshots/" + "Bug-" +System.currentTimeMillis()+"_"+ testMethodName + ".png"));
+			FileUtils.copyFile(sourceFile, new File(currentDir + "/FailureScreenshots/" + "Bug-" +System.currentTimeMillis()+"_"+ testMethodName + ".png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
