@@ -12,7 +12,7 @@ public class ContactsPage extends TestBase {
 
 	TestUtil testUtil;
 
-	@FindBy(xpath = "//div[@id='dashboard-toolbar']//span[text()='Contactss']")
+	@FindBy(xpath = "//div[@id='dashboard-toolbar']//span[text()='Contacts']")
 	WebElement contactsLabel;
 
 	// Not a good solution
