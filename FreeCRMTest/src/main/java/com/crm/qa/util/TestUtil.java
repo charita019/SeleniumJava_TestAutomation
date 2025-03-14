@@ -2,7 +2,9 @@ package com.crm.qa.util;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -62,7 +64,9 @@ public class TestUtil extends TestBase {
 			TakesScreenshot screenshot = ((TakesScreenshot) driver);
 			File sourceFile = screenshot.getScreenshotAs(OutputType.FILE);
 			String currentDir = System.getProperty("user.dir");
-			FileUtils.copyFile(sourceFile, new File(currentDir + "/FailureScreenshots/" + "Bug-" +System.currentTimeMillis()+"_"+ testMethodName + ".png"));
+			String timeStamp = new SimpleDateFormat("YYYYMMdd_HHmmss").format(new Date());
+			String destPath = currentDir + "/FailureScreenshots/" + testMethodName + "_" + timeStamp + ".jpg";
+			FileUtils.copyFile(sourceFile, new File(destPath));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

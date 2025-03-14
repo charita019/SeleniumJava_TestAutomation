@@ -21,16 +21,15 @@ public class CustomListener extends TestUtil implements ITestListener {
 		extent.attachReporter(sparkReporter);
 		extent.setSystemInfo("Tester", "Charita");
 	}
+	
+	@Override
+	public void onTestStart(ITestResult result) {
+		extentTest = extent.createTest(result.getMethod().getMethodName());
+	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		extentTest.log(Status.PASS, "Test Passed");
-
-	}
-
-	@Override
-	public void onTestStart(ITestResult result) {
-		extentTest = extent.createTest(result.getMethod().getMethodName());
 	}
 
 	@Override

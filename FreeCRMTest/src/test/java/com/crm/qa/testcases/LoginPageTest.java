@@ -26,7 +26,7 @@ public class LoginPageTest extends TestBase {
 
 	@BeforeMethod
 	public void setUp() {
-		initialization();
+		TestBase.initialization();
 		loginPage = new LoginPage();
 		mainPage = new MainPage();
 		loginPage = mainPage.redirectToLoginPage();
@@ -46,6 +46,6 @@ public class LoginPageTest extends TestBase {
 
 	@AfterMethod
 	public void tearDown() {
-		driver.quit();
+		TestBase.quit();
 	}
 }

@@ -27,7 +27,7 @@ public class HomePageTest extends TestBase{
 	
 	@BeforeMethod
 	public void setUp() {
-		initialization();
+		TestBase.initialization();
 		mainPage = new MainPage();
 		contactsPage = new ContactsPage();
 		loginPage = new LoginPage();
@@ -62,7 +62,7 @@ public class HomePageTest extends TestBase{
 	
 	@AfterTest
 	public void tearDown() {
-		driver.quit();
+		TestBase.quit();
 	}
 
 }
