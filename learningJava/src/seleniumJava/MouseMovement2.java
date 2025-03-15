@@ -25,11 +25,6 @@ public class MouseMovement2 {
 		action.moveToElement(menu).build().perform();
 		
 		driver.findElement(By.xpath("//div[@class='bstack-mm-sub-li'] //span[text()='Support']")).click();
-		
-		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
-				.withTimeout(Duration.ofSeconds(10))
-				.pollingEvery(Duration.ofSeconds(3))
-				.ignoring(Exception.class);
 	}
 
 }

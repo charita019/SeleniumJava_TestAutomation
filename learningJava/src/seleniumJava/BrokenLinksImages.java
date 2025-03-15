@@ -1,4 +1,4 @@
-package seleniumJava;
+ package seleniumJava;
 
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
