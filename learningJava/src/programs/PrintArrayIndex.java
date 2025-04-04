@@ -18,7 +18,7 @@ public class PrintArrayIndex {
 		int target=17;
 		
 		for(int i=0;i<a.length;i++) {
-			for(int j=1;j<a.length;j++) {
+			for(int j=i;j<a.length;j++) {
 				if((a[i]+a[j])==target) {
 					System.out.println("Index are :" + i + " " + j);
 			}
