@@ -9,7 +9,9 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.events.EventFiringDecorator;
 
+import com.crm.qa.listeners.EventListener;
 import com.crm.qa.util.TestUtil;
 
 public class TestBase {
@@ -32,20 +34,20 @@ public class TestBase {
 
 	public static void initialization() {
 		String browserName = prop.getProperty("browser");
-		//WebDriver baseDriver = null;
+		WebDriver baseDriver = null;
 		if (driver == null) {
 			if (browserName.equals("chrome")) {
 				System.setProperty("webdriver.chrome.driver",
 						"E:\\Charita\\Study\\Selenium\\SeleniumJava\\chromedriver-win64\\chromedriver.exe");
-				driver = new ChromeDriver();
+				baseDriver = new ChromeDriver();
 			} else if (browserName.equals("edge")) {
 				System.setProperty("webdriver.edge.driver", "path to edgedriver.exe");
-				driver = new EdgeDriver();
+				baseDriver = new EdgeDriver();
 			}
 		}
 
-//		EventListener eventListener = new EventListener();
-//		driver = new EventFiringDecorator<>(eventListener).decorate(baseDriver);
+		EventListener eventListener = new EventListener();
+		driver = new EventFiringDecorator<>(eventListener).decorate(baseDriver);
 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
