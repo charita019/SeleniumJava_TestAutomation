@@ -12,7 +12,7 @@ public class PatternsMain {
 		int rows = scanner.nextInt();
 		scanner.close();
 
-		System.out.println("**** STAR PATTERN 1 ****");
+		/*System.out.println("**** STAR PATTERN 1 ****");
 		s.starPattern1(rows);
 
 		System.out.println();
@@ -24,5 +24,10 @@ public class PatternsMain {
 
 		System.out.println("**** STAR PATTERN 3 ****");
 		s.starPattern3(rows);
+		
+		System.out.println();*/
+
+		System.out.println("**** STAR PATTERN 4 ****");
+		s.starPattern4(rows);
 	}
 }
