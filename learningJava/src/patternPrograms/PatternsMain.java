@@ -29,5 +29,8 @@ public class PatternsMain {
 
 		System.out.println("**** STAR PATTERN 4 ****");
 		s.starPattern4(rows);
+		
+		System.out.println("**** STAR PATTERN 4 With While Loop ****");
+		s.starPattern4UsingWhile(rows);
 	}
 }
