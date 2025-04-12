@@ -12,10 +12,10 @@ public class MainPage extends TestBase{
 	TestUtil testUtil;
 		
 	@FindBy(linkText = "LOGIN")
-	WebElement loginLink;
+	private WebElement loginLink;
 	
 	@FindBy(linkText = "Sign Up")
-	WebElement signUpLink;
+	private WebElement signUpLink;
 	
 	public MainPage() {
 		PageFactory.initElements(driver, this);
