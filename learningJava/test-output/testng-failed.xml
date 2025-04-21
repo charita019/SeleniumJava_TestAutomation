@@ -3,18 +3,11 @@
 <suite name="Failed suite [TestNG Session Test Automation Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Different TestNg feature test(failed)">
     <classes>
-      <class name="com.test.GoogleTitleTest">
+      <class name="seleniumJava.LoginTest">
         <methods>
-          <include name="googleTitleTest"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="testLogin"/>
         </methods>
-      </class> <!-- com.test.GoogleTitleTest -->
-      <class name="com.test.ExceptionTimeOutTest">
-        <methods>
-          <include name="testMethod"/>
-        </methods>
-      </class> <!-- com.test.ExceptionTimeOutTest -->
+      </class> <!-- seleniumJava.LoginTest -->
     </classes>
   </test> <!-- Different TestNg feature test(failed) -->
 </suite> <!-- Failed suite [TestNG Session Test Automation Suite] -->

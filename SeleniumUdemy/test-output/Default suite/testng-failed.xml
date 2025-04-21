@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="section14.test1">
+      <class name="section10.InputTextWays">
         <methods>
-          <include name="streamFilter"/>
+          <include name="inputways"/>
         </methods>
-      </class> <!-- section14.test1 -->
+      </class> <!-- section10.InputTextWays -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

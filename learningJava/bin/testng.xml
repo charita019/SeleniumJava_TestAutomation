@@ -3,12 +3,13 @@
 <suite name = "TestNG Session Test Automation Suite" >
 	<test name = "Different TestNg feature test">
 		<classes>
-			<class name = "com.test.ExceptionTimeOutTest"/>
+			<!--<class name = "com.test.ExceptionTimeOutTest"/>
 			<class name = "com.test.GoogleTest"/>
 			<class name = "com.test.GoogleTitleTest"/>
 			<class name = "com.test.InvocationCountTest"/>
 			<class name = "com.test.TestNgBasics"/>
-			<class name = "com.test.TestNgFeatures"/>
+			<class name = "com.test.TestNgFeatures"/>-->
+			<class name = "seleniumJava.LoginPageFactory"/>
 		</classes>
 	</test>
 </suite>

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-16T09:14:28 IST" name="Default suite" finished-at="2025-04-16T09:14:29 IST" duration-ms="83">
+  <suite started-at="2025-04-18T22:49:21 IST" name="Default suite" finished-at="2025-04-18T22:49:21 IST" duration-ms="75">
     <groups>
     </groups>
-    <test started-at="2025-04-16T09:14:28 IST" name="Default test" finished-at="2025-04-16T09:14:29 IST" duration-ms="83">
-      <class name="section14.test1">
-        <test-method signature="streamMap()[pri:0, instance:section14.test1@b9b00e0]" started-at="2025-04-16T09:14:29 IST" name="streamMap" finished-at="2025-04-16T09:14:29 IST" duration-ms="15" status="PASS">
+    <test started-at="2025-04-18T22:49:21 IST" name="Default test" finished-at="2025-04-18T22:49:21 IST" duration-ms="75">
+      <class name="section14.AnagramUsingStreams">
+        <test-method signature="anagram()[pri:0, instance:section14.AnagramUsingStreams@48aca48b]" started-at="2025-04-18T22:49:21 IST" name="anagram" finished-at="2025-04-18T22:49:21 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- streamMap -->
-      </class> <!-- section14.test1 -->
+        </test-method> <!-- anagram -->
+      </class> <!-- section14.AnagramUsingStreams -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
