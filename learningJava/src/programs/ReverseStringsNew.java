@@ -1,8 +1,7 @@
 package programs;
 
-public class ReverseString2 {
+public class ReverseStringsNew {
 	
-
 	public void reverseString(String str) {
 		System.out.println("Reverse string letter by letter");
 		String[] arrstr = str.split("");
@@ -47,20 +46,18 @@ public class ReverseString2 {
 				}
 				result[j]=arStr[i];
 				j--;
-				//System.out.println(result);
 			}
 		}
 		System.out.println(String.valueOf(result));
 	}
-	
+
 	public static void main(String[] args) {
 		String str = "This is a string";
-		ReverseString2 rev = new ReverseString2();
+		ReverseStringsNew rev = new ReverseStringsNew();
 		rev.reverseString(str);
 		System.out.println("\n");
 		rev.reverseWordString(str + " ");
 		System.out.println("\n");
 		rev.reverseStringPreserveSpace(str);
 	}
-
 }

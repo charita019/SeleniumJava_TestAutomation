@@ -1,3 +1,5 @@
+//REVERSE STRING USING STRING BUILDER
+
 package programs;
 
 public class ReverseString {
@@ -17,8 +19,6 @@ public class ReverseString {
 		for(int i = charArray.length-1 ; i>=0; i--) {
 			sb.append(charArray[i]+ " ");
 		}
-		
 		System.out.println(sb);
 	}
-
 }
