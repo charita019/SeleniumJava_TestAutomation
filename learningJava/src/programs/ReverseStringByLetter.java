@@ -4,8 +4,8 @@ public class ReverseStringByLetter {
 
 	public static void main(String[] args) {
 		
-		String input = "My name is Mojo Jojo";
-		
+		//String input = "My name is Mojo Jojo";
+		String input = "Java is good programming language";
 		reverseStringByLetter(input);
 
 	}

@@ -3,19 +3,37 @@ package programs;
 public class ArmstrongNumber {
 
 	public static void main(String[] args) {
-		int number = 153;
+		int number = 11;
 		 
-		//1cube +5cube+ 3cube = number  itself: 1+125+27 = 153
-
-		armstrongNumber(number);
+		boolean result = armstrongNumber(number);
+		if(result == true) {
+			System.out.println(number + " is an Armstrong Number");
+		}
+		else {
+			System.out.println(number + " is not an Armstrong Number");
+		}
 	}
 	
-	public static void armstrongNumber(int number) {
+	public static boolean armstrongNumber(int number) {
+		boolean isArmstrongNumber = false;
 		
-		while(number>0) {
-			
+		if(number<1) {
+			return isArmstrongNumber;
 		}
 		
+		int numberlength = Integer.toString(number).length();
+		int temp = number;
+		int rem=0, sum=0;
+		while(temp>0) {
+			rem = temp % 10 ;
+			temp = temp / 10;
+			sum = sum + (int)Math.round(Math.pow(rem, numberlength));
+		}
 		
+		if(sum==number) {
+			isArmstrongNumber = true;
+		}
+		
+		return isArmstrongNumber;
 	}
 }
