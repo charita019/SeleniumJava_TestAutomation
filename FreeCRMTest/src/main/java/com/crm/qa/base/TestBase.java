@@ -14,11 +14,12 @@ import org.openqa.selenium.support.events.EventFiringDecorator;
 import com.crm.qa.listeners.EventListener;
 import com.crm.qa.util.TestUtil;
 
-public class TestBase {
+public abstract class TestBase {
 
-	public static WebDriver driver = null;
-	public static Properties prop;
+	protected static WebDriver driver = null;
+	protected static Properties prop;
 
+	//constructor
 	public TestBase() {
 		try {
 			prop = new Properties();
@@ -32,7 +33,7 @@ public class TestBase {
 		}
 	}
 
-	public static void initialization() {
+	protected static void initialization() {
 		String browserName = prop.getProperty("browser");
 		WebDriver baseDriver = null;
 		if (driver == null) {
@@ -57,15 +58,19 @@ public class TestBase {
 		driver.get(prop.getProperty("url"));
 	}
 	
-	public static void quit() {
+	protected static void quit() {
 		System.out.println("Browser is Quitting");
 		driver.quit();
 		driver = null;
 	}
 	
-	public static void close() {
+	protected static void close() {
 		System.out.println("Broswer is closing");
 		driver.close();
 		driver = null;
+	}
+	
+	public static WebDriver getDriver() {
+		return driver;
 	}
 }

@@ -8,7 +8,7 @@ import java.util.Map;
 public class DuplicateOccurrence {
 
 	public static void countDuplicates(String input) {
-		String[] arrinput = input.split("");
+		String[] arrinput = input.split(" ");
 
 		HashMap<String, Integer> hmap = new HashMap<String, Integer>();
 
@@ -25,14 +25,14 @@ public class DuplicateOccurrence {
 		}
 
 		for (Map.Entry<String, Integer> duplicatesCount : hmap.entrySet()) {
-//			if (duplicatesCount.getValue() > 1) {
-//				System.out.println(duplicatesCount.getKey() + " = " + duplicatesCount.getValue());
-//			}
+			if (duplicatesCount.getValue() > 1) {
+				System.out.println(duplicatesCount.getKey() + " = " + duplicatesCount.getValue());
+			}
 			
 			//for Uniques
-			if(duplicatesCount.getValue()==1) {
-				System.out.println(duplicatesCount.getKey() + " =>" + duplicatesCount.getValue() );
-			}
+//			if(duplicatesCount.getValue()==1) {
+//				System.out.println(duplicatesCount.getKey() + " =>" + duplicatesCount.getValue() );
+//			}
 		}
 	}
 

@@ -23,7 +23,7 @@ public class ActionsPrograms {
 		
 		WebElement searchbar = driver.findElement(By.cssSelector("input.Pke_EE"));
 		Actions action = new Actions(driver);
-				
+				 
 		action.moveToElement(searchbar).click().keyDown(Keys.SHIFT).sendKeys("head").doubleClick().build().perform();
 		
 		action.moveToElement(accountsList).contextClick().build().perform();
