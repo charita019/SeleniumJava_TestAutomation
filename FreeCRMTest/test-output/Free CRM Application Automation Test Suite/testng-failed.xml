@@ -9,11 +9,24 @@
     <classes>
       <class name="com.crm.qa.testcases.ContactsPageTest">
         <methods>
+          <include name="verifyCreateBtnVisibilityTest"/>
           <include name="tearDown"/>
+          <include name="verifyselectSingleContactsTest"/>
           <include name="setUp"/>
+          <include name="verifyselectMultipleContactsTest"/>
+          <include name="verifyContactsPageLabel"/>
           <include name="verifyCreateBtnClickTest"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
+      <class name="com.crm.qa.testcases.HomePageTest">
+        <methods>
+          <include name="verifyAddIconClick"/>
+          <include name="tearDown"/>
+          <include name="verifyLoggedInUserNameTest"/>
+          <include name="verifyContactsLinkTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.HomePageTest -->
       <class name="com.crm.qa.testcases.CreateNewContactPageTest">
         <methods>
           <include name="setUp"/>
