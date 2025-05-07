@@ -2,7 +2,9 @@ package javaCollectionPart3;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class SetConcept {
 
@@ -30,7 +32,7 @@ public class SetConcept {
 		iset.add(900);
 		System.out.println("Displaying an Integer Set :" + iset);
 
-		Set<String> hset = new HashSet();
+		Set<String> hset = new HashSet<String>();
 		hset.add("594");
 		hset.add("d");
 		System.out.println("Displaying contents of Set : " + hset);
@@ -132,6 +134,93 @@ public class SetConcept {
 		System.out.println("Displaying elements of set : " + set4);
 		System.out.println("Status of Set : " + set4.remove("Potato"));
 		System.out.println("Status of Set : " + set4.remove("Potato"));
+		
+		
+		System.out.println("Size of the set is : " + set4.size());
+		for(String vegie : set4) {
+			System.out.println(vegie);
+		}
+		
+		Set<Integer> set5 = new HashSet<Integer>();
+		set5.add(90);
+		set5.add(-1);
+		set5.add(9);
+		set5.add(10);
+		System.out.println("Displaying set elements from set 5 :");
+		for(int num : set5) {
+			System.out.println(num);
+		}
+		/*
+		 * 8. toArray() - returns Array of type Object 
+		 */
+		Object[] ar = set5.toArray();
+		System.out.println("Set to Array : ");
+		for(int i=0;i<ar.length;i++) {
+			System.out.println(ar[i]);
+		}
+		
+		
+		Set<Integer> set6 = new HashSet<Integer>();
+		set6.add(1);
+		set6.add(3);
+		set6.add(2);
+		set6.add(4);
+		set6.add(8);
+		set6.add(9);
+		set6.add(0);
+		Set<Integer> set7 = new HashSet<Integer>();
+		set7.add(1);
+		set7.add(3);
+		set7.add(7);
+		set7.add(5);
+		set7.add(4);
+		set7.add(0);
+		set7.add(8);
+		set7.add(9);
+		
+		//System.out.println("Intersections is : ");
+		//boolean intersection = set6.retainAll(set7);
+		//System.out.println(intersection);
+		//System.out.println(set6);
+		
+//		System.out.println("Union of Set 6 and Set 7 is : ");
+//		set6.addAll(set7);
+//		System.out.println(set6);
+		
+		System.out.println("Difference between Set 6 and Set 7 is : ");
+		set6.removeAll(set7);
+		System.out.println(set6);
+		
+		
+		Set<String> set8 = new HashSet<String>();
+		set8.add("iopy");
+		set8.add(" ");
+		set8.add("abv");
+		set8.add("nkf");
+		set8.add(" ");
+		set8.add("qwerty");
+		set8.add(" ");
+		System.out.println("Elements in set 8 are : " + set8);
+		
+		Set<String> set9 = new LinkedHashSet<String>();
+		set9.add("iopy");
+		set9.add(" ");
+		set9.add("abv");
+		set9.add("nkf");
+		set9.add(" ");
+		set9.add("qwerty");
+		set9.add(" ");
+		System.out.println("Elements in LinkedHashSet are : " + set9);
+		
+		Set<String> set10 = new TreeSet<String>();
+		set10.add("iopy");
+		set10.add(" ");
+		set10.add("abv");
+		set10.add("nkf");
+		set10.add(" ");
+		set10.add("qwerty");
+		set10.add(" ");
+		System.out.println("Elements in TreeSet are : " + set10);
 		
 	}
 

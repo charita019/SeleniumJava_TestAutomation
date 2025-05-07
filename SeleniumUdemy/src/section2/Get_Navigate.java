@@ -12,6 +12,7 @@ public class Get_Navigate {
 				"E:\\Charita\\Study\\Selenium\\SeleniumJava\\chromedriver-win64\\chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--incognito");
+		options.addArguments("--start-maximized");
 		WebDriver driver = new ChromeDriver(options);
 
 		// Get Method

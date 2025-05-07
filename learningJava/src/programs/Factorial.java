@@ -19,6 +19,7 @@ public class Factorial {
 	public static int factorial(int number) {
 		int fact = 1;
 		for(int i = number ; i>=1; i--) {
+			System.out.println(i);
 			fact = fact * i ;
 		}
 		

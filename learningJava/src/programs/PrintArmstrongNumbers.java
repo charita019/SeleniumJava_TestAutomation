@@ -7,7 +7,7 @@ public class PrintArmstrongNumbers {
 	public static void main(String[] args) {
 		
 		
-		int numlimit=-100;
+		int numlimit=100;
 		
 		ArrayList<Integer> result = printArmstrongNumbers(numlimit);
 		
