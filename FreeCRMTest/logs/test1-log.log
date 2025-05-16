@@ -1,0 +1,13 @@
+2025-05-12 00:23:15 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-12 00:23:33 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-12 00:23:36 INFO  com.crm.qa.base.TestBase - Starting MAIN Page Title Test
+2025-05-12 00:23:36 INFO  com.crm.qa.base.TestBase - MAIN Page Title Test is completed
+2025-05-12 00:23:40 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-12 00:23:43 INFO  com.crm.qa.base.TestBase - Starting Login Link Click Test on Main Page
+2025-05-12 00:23:44 INFO  com.crm.qa.base.TestBase - Login Link click test is completed
+2025-05-12 00:27:16 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-12 00:27:20 INFO  com.crm.qa.testcases.MainPageTest - Starting MAIN Page Title Test
+2025-05-12 00:27:20 INFO  com.crm.qa.testcases.MainPageTest - MAIN Page Title Test is completed
+2025-05-12 00:27:23 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-12 00:27:26 INFO  com.crm.qa.testcases.MainPageTest - Starting Login Link Click Test on Main Page
+2025-05-12 00:27:26 INFO  com.crm.qa.testcases.MainPageTest - Login Link click test is completed

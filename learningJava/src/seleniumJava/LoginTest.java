@@ -31,6 +31,7 @@ public class LoginTest {
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='username']")));
+		
 		driver.findElement(By.xpath("//input[@name='username']")).sendKeys(username);
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys(password);
 
@@ -39,6 +40,8 @@ public class LoginTest {
 		System.out.println("Logged in uSer is  :  " + username);
 
 		driver.quit();
+		
+	
 	}
 
 }

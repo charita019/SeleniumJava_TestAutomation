@@ -1,0 +1,5 @@
+2025-05-13 23:27:58 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-13 23:28:11 INFO  com.crm.qa.testcases.MainPageTest - ********Starting MAIN Page Title Test***********
+2025-05-13 23:28:11 INFO  com.crm.qa.testcases.MainPageTest - ********MAIN Page Title Test is completed********
+2025-05-13 23:28:11 INFO  com.crm.qa.testcases.MainPageTest - **************Starting Browser Quit***************
+2025-05-13 23:28:12 INFO  com.crm.qa.testcases.MainPageTest - ***************Browser Quit completed successfully*******

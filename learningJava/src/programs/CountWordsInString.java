@@ -12,7 +12,7 @@ public class CountWordsInString {
 			System.out.println(str + " String is blank");
 		}
 		else {
-		System.out.println("Count of words in " + str + " is : " + count);
+		System.out.println("Count of words in" + "'"+str+"'" + "is : " + count);
 		}
 	}
 	

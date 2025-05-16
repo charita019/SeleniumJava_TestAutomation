@@ -33,13 +33,12 @@ public class LoginPage extends TestBase{
 	//Initializing the Page Objects:
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
-		testUtil = new TestUtil();
 	}
 	
 	//Actions:
-	public String validateLoginPageTitle() {
-		return driver.getTitle();
-	}
+//	public String getLoginPageTitle() {
+//		return driver.getTitle();
+//	}
 	
 	public HomePage login(String usernm, String pwd) {
 		useremail.sendKeys(usernm);
@@ -49,3 +48,6 @@ public class LoginPage extends TestBase{
 		return new HomePage();
 	}
 }
+
+
+//Jatin@1507 - csharma19 : Jenkins

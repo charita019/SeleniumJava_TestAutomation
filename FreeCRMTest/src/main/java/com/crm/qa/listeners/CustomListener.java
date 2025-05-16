@@ -20,6 +20,10 @@ public class CustomListener extends TestUtil implements ITestListener {
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
 		extent.setSystemInfo("Tester", "Charita");
+		extent.setSystemInfo("Operating System", "Windows 11");
+		extent.setSystemInfo("Browser", "Google Chrome");
+		extent.setSystemInfo("Application", "FreeCRM");
+		
 	}
 	
 	@Override
@@ -29,7 +33,7 @@ public class CustomListener extends TestUtil implements ITestListener {
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		extentTest.log(Status.PASS, "Test Passed");
+		extentTest.log(Status.PASS, "Test Passed" + result.getMethod().getMethodName());
 	}
 
 	@Override
@@ -43,7 +47,7 @@ public class CustomListener extends TestUtil implements ITestListener {
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		extentTest.log(Status.SKIP, "Test Skipped");
+		extentTest.log(Status.SKIP, "Test Skipped" + result.getMethod().getMethodName());
 	}
 
 	@Override
