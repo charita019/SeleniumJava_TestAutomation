@@ -1,9 +1,11 @@
 package programs;
 
+import static java.lang.Math.*;
+
 public class ArmstrongNumber {
 
 	public static void main(String[] args) {
-		int number = 11;
+		int number = 2;
 		 
 		boolean result = armstrongNumber(number);
 		if(result == true) {
@@ -27,7 +29,7 @@ public class ArmstrongNumber {
 		while(temp>0) {
 			rem = temp % 10 ;
 			temp = temp / 10;
-			sum = sum + (int)Math.round(Math.pow(rem, numberlength));
+			sum = sum + (int)round(pow(rem, numberlength));
 		}
 		
 		if(sum==number) {

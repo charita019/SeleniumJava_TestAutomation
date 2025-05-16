@@ -1,9 +1,12 @@
 package com.crm.qa.testcases;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.crm.qa.base.TestBase;
 import com.crm.qa.pages.ContactsPage;
@@ -20,6 +23,8 @@ public class ContactsPageTest extends TestBase {
 	ContactsPage contactsPage;
 	NewContactPage newContactPage;
 
+	private static final Logger logger = LogManager.getLogger(ContactsPageTest.class);
+	
 	public ContactsPageTest() {
 		super();
 	}
@@ -30,19 +35,78 @@ public class ContactsPageTest extends TestBase {
 		mainPage = new MainPage();
 		loginPage = new LoginPage();
 		contactsPage = new ContactsPage();
-		newContactPage = new NewContactPage();
 		loginPage = mainPage.redirectToLoginPage();
 		homePage = loginPage.login(prop.getProperty("useremail"), prop.getProperty("password"));
-		contactsPage = homePage.clickContactsMenuLink("Contacts");
+		contactsPage = contactsPage.clickContactPageLink("Contacts");
+		softAssert = new SoftAssert();
 
 	}
+	
+	@Test (priority = 1)
+	public void ContactPageTitleTest() {
+		logger.info("******Start Contact Page Title Test******");
+		String actualtitle = contactsPage.getPageTitle();
+		String expectedtitle = "Cogmento CRM";
+		softAssert.assertEquals(actualtitle, expectedtitle);
+		softAssert.assertAll();
+		logger.info("******Contact Page Title Test Completed******");
+	}
 
-	@Test(priority = 1)
+	@Test (priority = 2)
+	public void ContactPageUrlTest() {
+		logger.info("******Start Contact Page Url Test******");
+		String actualurl = contactsPage.getPageUrl();
+		String expectedurl = "https://ui.cogmento.com/contacts";
+		softAssert.assertEquals(actualurl, expectedurl);
+		softAssert.assertAll();
+		logger.info("******Contact Page Url Test Completed******");
+	}
+	
+	@Test(priority = 3)
 	public void verifyContactsPageLabel() {
-		Assert.assertTrue(contactsPage.verifyContactsLabel(), "Contact Label is missing on the page");
+		logger.info("******Start Contact Page Heading Label Test******");
+		softAssert.assertTrue(contactsPage.verifyContactsLabel(), "Contact Label is missing on the page");
+		softAssert.assertAll();
+		logger.info("******Contact Page Heading Label Test Completed******");
+	}
+	
+	@Test(priority = 4)
+	public void exportButtonTest() {
+		logger.info("****** Start Contact Page Export Button Test******");
+		boolean displayFlag = contactsPage.ExportButtonDisplay();
+		softAssert.assertTrue(displayFlag, "Button is not visible");
+		String actualText = contactsPage.exportButtonText();
+		String expectedText="Export";
+		softAssert.assertEquals(actualText,expectedText,"Button Text Do not Match");
+		softAssert.assertAll();
+		logger.info("******Contact Page Export Button Test Completed******");
+	}
+	
+	@Test(priority = 5)
+	public void filterButtonTest() {
+		logger.info("******Start Contact Page Filter Button Test******");
+		boolean filterbtndisplay = contactsPage.FilterButtonDisplay();
+		softAssert.assertTrue(filterbtndisplay, "Button is not visible");
+		String btnTextBeforeClick = contactsPage.filterButtonText();
+		String expected = "Show Filters";
+		softAssert.assertEquals(btnTextBeforeClick, expected, "Button Text do not match");
+		contactsPage.FilterButtonClick();
+		String btnTextAfterClick = contactsPage.filterButtonText();
+		String expectedAfterClick = "Hide Filters";
+		softAssert.assertEquals(btnTextAfterClick, expectedAfterClick , "Button Text do not match");
+		softAssert.assertAll();
+		logger.info("******Contact Page Filter Button Test Completed******");
+	}
+	
+	@Test(priority = 4)
+	public void ExportButtonTest() {
+		String popupText = contactsPage.ExportButton();
+		if(popupText.contains("OK or Cancel")) {
+			contactsPage.AcceptButton();
+		}	
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 4)
 	public void verifyselectSingleContactsTest() {
 
 		contactsPage.selectContactsByName("J S");

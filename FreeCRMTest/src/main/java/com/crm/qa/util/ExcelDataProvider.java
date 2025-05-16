@@ -11,7 +11,7 @@ import org.testng.annotations.DataProvider;
 
 public class ExcelDataProvider {
 
-	String filePath = "E:\\Charita\\Study\\GitSelenium\\SeleniumJava_TestAutomation\\FreeCRMTest\\src\\main\\java\\com\\crm\\qa\\testdata\\FreeCrmTestData.xlsx";
+	String filePath = "E:\\Charita\\Study\\GitSelenium\\Selenium\\SeleniumJava_TestAutomation\\FreeCRMTest\\src\\main\\java\\com\\crm\\qa\\testdata\\FreeCrmTestData.xlsx";
 	String sheetName = "contacts";
 
 	@DataProvider(name = "excelData")
