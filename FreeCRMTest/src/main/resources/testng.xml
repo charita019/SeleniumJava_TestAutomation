@@ -9,9 +9,9 @@
 		<classes>
 			<class name="com.crm.qa.testcases.MainPageTest"/>
 			<class name="com.crm.qa.testcases.LoginPageTest"/>
-			<!--<class name="com.crm.qa.testcases.HomePageTest"/>
+			<class name="com.crm.qa.testcases.HomePageTest"/>
 			<class name="com.crm.qa.testcases.ContactsPageTest"/>
-			<class name="com.crm.qa.testcases.CreateNewContactPageTest"/>-->
+			<!--<class name="com.crm.qa.testcases.CreateNewContactPageTest"/>-->
 			</classes>
 	</test>
 </suite>

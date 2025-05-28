@@ -7,50 +7,19 @@
   </listeners>
   <test thread-count="5" name="Free CRM App Test Cases(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.LoginPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="loginTest"/>
-          <include name="tearDown"/>
-          <include name="loginPageTitleTest"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
-      <class name="com.crm.qa.testcases.CreateNewContactPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="verifyCreateNewContact"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.CreateNewContactPageTest -->
       <class name="com.crm.qa.testcases.ContactsPageTest">
         <methods>
-          <include name="verifyCreateBtnVisibilityTest"/>
+          <include name="filterButtonTest"/>
+          <include name="exportButtonTest"/>
           <include name="tearDown"/>
-          <include name="verifyselectSingleContactsTest"/>
-          <include name="verifyselectMultipleContactsTest"/>
           <include name="setUp"/>
-          <include name="verifyContactsPageLabel"/>
-          <include name="verifyCreateBtnClickTest"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
       <class name="com.crm.qa.testcases.HomePageTest">
         <methods>
-          <include name="verifyAddIconClick"/>
           <include name="tearDown"/>
-          <include name="verifyLoggedInUserNameTest"/>
-          <include name="verifyContactsLinkTest"/>
-          <include name="setUp"/>
-          <include name="verifyHomePageTitleTest"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.HomePageTest -->
-      <class name="com.crm.qa.testcases.MainPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="mainPageTitleTest"/>
-          <include name="loginLinkClickTest"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.MainPageTest -->
     </classes>
   </test> <!-- Free CRM App Test Cases(failed) -->
 </suite> <!-- Failed suite [Free CRM Application Automation Test Suite] -->

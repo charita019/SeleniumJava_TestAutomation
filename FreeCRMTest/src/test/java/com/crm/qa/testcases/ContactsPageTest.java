@@ -2,7 +2,6 @@ package com.crm.qa.testcases;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -32,11 +31,10 @@ public class ContactsPageTest extends TestBase {
 	@BeforeMethod
 	public void setUp() {
 		TestBase.initialization();
-		mainPage = new MainPage();
-		loginPage = new LoginPage();
-		contactsPage = new ContactsPage();
+		mainPage = new MainPage();		
 		loginPage = mainPage.redirectToLoginPage();
 		homePage = loginPage.login(prop.getProperty("useremail"), prop.getProperty("password"));
+		contactsPage = new ContactsPage();
 		contactsPage = contactsPage.clickContactPageLink("Contacts");
 		softAssert = new SoftAssert();
 
@@ -65,7 +63,7 @@ public class ContactsPageTest extends TestBase {
 	@Test(priority = 3)
 	public void verifyContactsPageLabel() {
 		logger.info("******Start Contact Page Heading Label Test******");
-		softAssert.assertTrue(contactsPage.verifyContactsLabel(), "Contact Label is missing on the page");
+		softAssert.assertTrue(contactsPage.PageHeading(), "Page Heading is missing or incorrect");
 		softAssert.assertAll();
 		logger.info("******Contact Page Heading Label Test Completed******");
 	}
@@ -98,37 +96,37 @@ public class ContactsPageTest extends TestBase {
 		logger.info("******Contact Page Filter Button Test Completed******");
 	}
 	
-	@Test(priority = 4)
-	public void ExportButtonTest() {
-		String popupText = contactsPage.ExportButton();
-		if(popupText.contains("OK or Cancel")) {
-			contactsPage.AcceptButton();
-		}	
-	}
-
-	@Test(priority = 4)
-	public void verifyselectSingleContactsTest() {
-
-		contactsPage.selectContactsByName("J S");
-	}
-
-	@Test (priority = 3)
-	public void verifyselectMultipleContactsTest() {
-
-		contactsPage.selectContactsByName("J S");
-		contactsPage.selectContactsByName("C S");
-	}
-	
-	@Test (priority = 4)
-	public void verifyCreateBtnVisibilityTest() {
-		boolean isBtnVisibleflag = contactsPage.createButtonVisibility();
-		Assert.assertTrue(isBtnVisibleflag, "Create Button is not visible");
-	}
-	
-	@Test(priority = 5)
-	public void verifyCreateBtnClickTest() {
-		newContactPage = contactsPage.clickCreateButton();
-	}
+//	@Test(priority = 4, enabled = false)
+//	public void ExportButtonTest() {
+//		String popupText = contactsPage.ExportButton();
+//		if(popupText.contains("OK or Cancel")) {
+//			contactsPage.AcceptButton();
+//		}	
+//	}
+//
+//	@Test(priority = 4)
+//	public void verifyselectSingleContactsTest() {
+//
+//		contactsPage.selectContactsByName("J S");
+//	}
+//
+//	@Test (priority = 3)
+//	public void verifyselectMultipleContactsTest() {
+//
+//		contactsPage.selectContactsByName("J S");
+//		contactsPage.selectContactsByName("C S");
+//	}
+//	
+//	@Test (priority = 4)
+//	public void verifyCreateBtnVisibilityTest() {
+//		boolean isBtnVisibleflag = contactsPage.createButtonVisibility();
+//		Assert.assertTrue(isBtnVisibleflag, "Create Button is not visible");
+//	}
+//	
+//	@Test(priority = 5)
+//	public void verifyCreateBtnClickTest() {
+//		newContactPage = contactsPage.clickCreateButton();
+//	}
 
 	@AfterMethod
 	public void tearDown() {

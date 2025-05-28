@@ -5,10 +5,11 @@ public class NumberOfDigits {
 	public static void main(String[] args) {
 
 		int number = -483749;
+		//int number = 0;
 
-		// int noofdigits = getNumberOfDigits(number);
-		// System.out.println("Number of digits in the given number are : " +
-		// noofdigits);
+		 int noofdigits = getNumberOfDigits(number);
+		 System.out.println("Number of digits in the given number are : " +
+		 noofdigits);
 
 		int noofdigits2 = getNumberOfDigits_Method2(number);
 		System.out.println("Number of digits in the given number are : " + noofdigits2);

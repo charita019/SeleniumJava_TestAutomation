@@ -28,6 +28,7 @@ public class CustomListener extends TestUtil implements ITestListener {
 	
 	@Override
 	public void onTestStart(ITestResult result) {
+		//creating a test entry in the report with the method name
 		extentTest = extent.createTest(result.getMethod().getMethodName());
 	}
 

@@ -39,7 +39,6 @@ public class MainPageTest extends TestBase {
 		 */
 		TestBase.initialization();
 		mainPage = new MainPage(); // to call the methods of the page class by creating object of the page class
-		testUtil = new TestUtil();
 		softAssert = new SoftAssert();
 	}
 

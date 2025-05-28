@@ -8,7 +8,9 @@ public class FindFirstDuplicateElement {
 
 		// find first duplicate element in an array
 
-		String str = "abrakadabra";
+		//String str = "abrakadabra";
+		
+		String str = "August";
 
 		String result = firstDuplicate(str);
 

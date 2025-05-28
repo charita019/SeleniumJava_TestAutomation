@@ -11,16 +11,16 @@ import com.crm.qa.base.TestBase;
 public class HomePage extends TestBase{
 	
 	@FindBy(xpath = "//span[contains(@class,'user-display')]")
-	WebElement userNameLabel;
+	private WebElement userNameLabel;
 	
 	@FindBy(id = "main-nav")
-	WebElement navmenu;
+	private WebElement navmenu;
 	
 	@FindBy(xpath = "//div[@class='menu-item-wrapper']")
-	List<WebElement> navMenuLinks;
+	private List<WebElement> navMenuLinks;
 	
 	@FindBy(tagName = "body")
-	WebElement clickOutside;
+	private WebElement clickOutside;
 	
 	NavigationMenu navigationMenu;
 	

@@ -18,7 +18,7 @@ public class ContactsPage extends TestBase {
 //	@FindBy(xpath = "//a[contains(text(),'J S')]/parent::td//preceding-sibling::td//input[@name='id']")
 //	WebElement checkBox;
 	
-	@FindBy(className = "download icon")
+	@FindBy(className = "download.icon")
 	private WebElement exportButton;
 	
 	@FindBy(xpath = "//div[@class='ui segment']")
@@ -45,9 +45,10 @@ public class ContactsPage extends TestBase {
 		return new ContactsPage();
 	}
 	
-	public boolean verifyContactsLabel() {
+	public boolean PageHeading() {
 		return contactsLabel.isDisplayed();
 	}
+	
 	
 	public boolean ExportButtonDisplay() {
 		return exportButton.isDisplayed();
