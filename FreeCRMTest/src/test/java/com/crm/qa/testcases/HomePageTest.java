@@ -40,7 +40,7 @@ public class HomePageTest extends TestBase {
 		homePage = new HomePage();
 		testUtil = new TestUtil();
 		loginPage = mainPage.redirectToLoginPage();
-		homePage = loginPage.login(prop.getProperty("useremail"), prop.getProperty("password"));
+		homePage = loginPage.login(prop.getProperty("user1"), prop.getProperty("pass1"));
 		homePage = homePage.clickHomePageLink("Home");
 	}
 
