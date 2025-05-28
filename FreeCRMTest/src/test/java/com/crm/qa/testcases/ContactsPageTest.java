@@ -23,7 +23,7 @@ public class ContactsPageTest extends TestBase {
 	NewContactPage newContactPage;
 
 	private static final Logger logger = LogManager.getLogger(ContactsPageTest.class);
-	
+
 	public ContactsPageTest() {
 		super();
 	}
@@ -31,16 +31,15 @@ public class ContactsPageTest extends TestBase {
 	@BeforeMethod
 	public void setUp() {
 		TestBase.initialization();
-		mainPage = new MainPage();		
+		mainPage = new MainPage();
 		loginPage = mainPage.redirectToLoginPage();
 		homePage = loginPage.login(prop.getProperty("useremail"), prop.getProperty("password"));
 		contactsPage = new ContactsPage();
 		contactsPage = contactsPage.clickContactPageLink("Contacts");
 		softAssert = new SoftAssert();
-
 	}
-	
-	@Test (priority = 1)
+
+	@Test(priority = 1)
 	public void ContactPageTitleTest() {
 		logger.info("******Start Contact Page Title Test******");
 		String actualtitle = contactsPage.getPageTitle();
@@ -50,7 +49,7 @@ public class ContactsPageTest extends TestBase {
 		logger.info("******Contact Page Title Test Completed******");
 	}
 
-	@Test (priority = 2)
+	@Test(priority = 2)
 	public void ContactPageUrlTest() {
 		logger.info("******Start Contact Page Url Test******");
 		String actualurl = contactsPage.getPageUrl();
@@ -59,7 +58,7 @@ public class ContactsPageTest extends TestBase {
 		softAssert.assertAll();
 		logger.info("******Contact Page Url Test Completed******");
 	}
-	
+
 	@Test(priority = 3)
 	public void verifyContactsPageLabel() {
 		logger.info("******Start Contact Page Heading Label Test******");
@@ -67,19 +66,19 @@ public class ContactsPageTest extends TestBase {
 		softAssert.assertAll();
 		logger.info("******Contact Page Heading Label Test Completed******");
 	}
-	
+
 	@Test(priority = 4)
 	public void exportButtonTest() {
 		logger.info("****** Start Contact Page Export Button Test******");
 		boolean displayFlag = contactsPage.ExportButtonDisplay();
 		softAssert.assertTrue(displayFlag, "Button is not visible");
 		String actualText = contactsPage.exportButtonText();
-		String expectedText="Export";
-		softAssert.assertEquals(actualText,expectedText,"Button Text Do not Match");
+		String expectedText = "Export";
+		softAssert.assertEquals(actualText, expectedText, "Button Text Do not Match");
 		softAssert.assertAll();
 		logger.info("******Contact Page Export Button Test Completed******");
 	}
-	
+
 	@Test(priority = 5)
 	public void filterButtonTest() {
 		logger.info("******Start Contact Page Filter Button Test******");
@@ -91,11 +90,11 @@ public class ContactsPageTest extends TestBase {
 		contactsPage.FilterButtonClick();
 		String btnTextAfterClick = contactsPage.filterButtonText();
 		String expectedAfterClick = "Hide Filters";
-		softAssert.assertEquals(btnTextAfterClick, expectedAfterClick , "Button Text do not match");
+		softAssert.assertEquals(btnTextAfterClick, expectedAfterClick, "Button Text do not match");
 		softAssert.assertAll();
 		logger.info("******Contact Page Filter Button Test Completed******");
 	}
-	
+
 //	@Test(priority = 4, enabled = false)
 //	public void ExportButtonTest() {
 //		String popupText = contactsPage.ExportButton();

@@ -21,7 +21,6 @@ public class NavigationMenu extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	
 	public void NavigationToMenu(String menuname) {
 		Actions action = new Actions(driver);
 		action.moveToElement(navigationmenu).build().perform();

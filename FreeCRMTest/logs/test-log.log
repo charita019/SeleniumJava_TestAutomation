@@ -1,0 +1,28 @@
+2025-05-28 19:02:19 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-28 19:02:59 INFO  com.crm.qa.testcases.LoginPageTest - ******Start Login Page Title Test*******
+2025-05-28 19:02:59 INFO  com.crm.qa.testcases.LoginPageTest - ******Login Page Title Test Completed*******
+2025-05-28 19:02:59 INFO  com.crm.qa.testcases.LoginPageTest - ****** Browser Quit Initiated******
+2025-05-28 19:03:00 INFO  com.crm.qa.testcases.LoginPageTest - ***** Browser Quit Completed*********
+2025-05-28 19:03:01 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-28 19:03:18 INFO  com.crm.qa.testcases.LoginPageTest - ********* Start Login Page URL Test********
+2025-05-28 19:03:18 INFO  com.crm.qa.testcases.LoginPageTest - ********* Login Page URL Test Completed********
+2025-05-28 19:03:18 INFO  com.crm.qa.testcases.LoginPageTest - ****** Browser Quit Initiated******
+2025-05-28 19:03:19 INFO  com.crm.qa.testcases.LoginPageTest - ***** Browser Quit Completed*********
+2025-05-28 19:03:20 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-28 19:04:04 INFO  com.crm.qa.testcases.LoginPageTest - ****** Browser Quit Initiated******
+2025-05-28 19:04:05 INFO  com.crm.qa.testcases.LoginPageTest - ***** Browser Quit Completed*********
+2025-05-28 19:04:06 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-28 19:04:16 INFO  com.crm.qa.testcases.MainPageTest - ******Starting Main Page Title Test*******
+2025-05-28 19:04:16 INFO  com.crm.qa.testcases.MainPageTest - ******MAIN Page Title Test is completed*****
+2025-05-28 19:04:16 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-28 19:04:17 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-28 19:04:18 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-28 19:04:28 INFO  com.crm.qa.testcases.MainPageTest - ********Starting Main Page Url Test***********
+2025-05-28 19:04:28 INFO  com.crm.qa.testcases.MainPageTest - ********Main Page Url Test Completed***********
+2025-05-28 19:04:28 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-28 19:04:28 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-28 19:04:30 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-28 19:04:48 INFO  com.crm.qa.testcases.MainPageTest - ******Starting Start Here Click Test on Main Page********
+2025-05-28 19:04:54 INFO  com.crm.qa.testcases.MainPageTest - ****Start Here click test is completed******
+2025-05-28 19:04:54 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-28 19:04:54 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****

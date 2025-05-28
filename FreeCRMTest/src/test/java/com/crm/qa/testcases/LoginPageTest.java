@@ -56,19 +56,12 @@ public class LoginPageTest extends TestBase {
 		softAssert.assertAll();
 		logger.info("********* Login Page URL Test Completed********");
 	}
-
-	/*
-	 * @Test(priority = 3) public void loginTest() {
-	 * logger.info("******Start Login Functionality Test*******"); homePage =
-	 * loginPage.login(prop.getProperty("useremail"), prop.getProperty("password"));
-	 * logger.info("******Login Functionality Test Completed*******"); }
-	 */
 	
 	@Test (priority = 3)
 	public void multipleLoginsTest() {
 		Map<String,String> loginData = new HashMap<String,String>();
-		loginData.put(prop.getProperty("key1"), prop.getProperty("value1"));
-		loginData.put(prop.getProperty("key2"), prop.getProperty("value2"));
+		loginData.put(prop.getProperty("user1"), prop.getProperty("pass1"));
+		loginData.put(prop.getProperty("user2"), prop.getProperty("pass2"));
 		
 		for(Map.Entry<String, String> loginDataInput : loginData.entrySet()) {
 			String username = loginDataInput.getKey();
@@ -80,8 +73,6 @@ public class LoginPageTest extends TestBase {
 			
 			loginPage.logout();
 		}
-		
-		
 	}
 
 	@AfterMethod
