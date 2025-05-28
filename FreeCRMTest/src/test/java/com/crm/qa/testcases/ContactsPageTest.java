@@ -33,7 +33,7 @@ public class ContactsPageTest extends TestBase {
 		TestBase.initialization();
 		mainPage = new MainPage();
 		loginPage = mainPage.redirectToLoginPage();
-		homePage = loginPage.login(prop.getProperty("useremail"), prop.getProperty("password"));
+		homePage = loginPage.login(prop.getProperty("user1"), prop.getProperty("pass1"));
 		contactsPage = new ContactsPage();
 		contactsPage = contactsPage.clickContactPageLink("Contacts");
 		softAssert = new SoftAssert();

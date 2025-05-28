@@ -18,7 +18,7 @@ public class ContactsPage extends TestBase {
 //	@FindBy(xpath = "//a[contains(text(),'J S')]/parent::td//preceding-sibling::td//input[@name='id']")
 //	WebElement checkBox;
 	
-	@FindBy(className = "download.icon")
+	@FindBy(xpath = "//button[text()='Export']")
 	private WebElement exportButton;
 	
 	@FindBy(xpath = "//div[@class='ui segment']")
@@ -27,7 +27,7 @@ public class ContactsPage extends TestBase {
 	@FindBy(xpath = "//div[contains(@class,'ui small')]//button[contains(text(),'OK')]")
 	private WebElement acceptButton;
 	
-	@FindBy(xpath = "//button[text()='Show Filters']")
+	@FindBy(xpath = "//button[contains(text(),'Filters')]")
 	private WebElement filterButton;
 		
 	NavigationMenu navigationMenu;
