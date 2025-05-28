@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -57,8 +56,6 @@ public class LoginPage extends TestBase{
 	}
 	
 	public LoginPage logout() {
-//		Actions action = new Actions(driver);
-//		action.moveToElement(gearIcon).click().build().perform();
 		gearIcon.click();
 		
 		List<WebElement> menuList = driver.findElements(By.xpath("//a[@role='option']"));
@@ -69,10 +66,6 @@ public class LoginPage extends TestBase{
 				break;
 			}
 		}
-		
 		return new LoginPage();
 	}
 }
-
-
-//Jatin@1507 - csharma19 : Jenkins

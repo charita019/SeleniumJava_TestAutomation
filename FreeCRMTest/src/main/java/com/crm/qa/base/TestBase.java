@@ -8,9 +8,7 @@ import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.SessionNotCreatedException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.events.EventFiringDecorator;
@@ -56,8 +54,6 @@ public class TestBase {
 			WebDriver baseDriver = null;
 			if (driver == null) {
 				if (browserName.equals("chrome")) {
-//					System.setProperty("webdriver.chrome.driver",
-//							"E:\\Charita\\Study\\Selenium\\SeleniumJava\\chromedriver-win64\\chromedriver.exe");
 					baseDriver = new ChromeDriver();
 				} else if (browserName.equals("edge")) {
 					baseDriver = new EdgeDriver();
@@ -90,15 +86,7 @@ public class TestBase {
 	}
 
 	protected static void quit() { // closes all browsers + sets session id to null
-		// System.out.println("Browser is Quitting");
 		driver.quit();
 		driver = null;
 	}
-
-//	protected static void close() { // closes current browser 
-//		System.out.println("Broswer is closing");
-//		driver.close();
-//		driver = null;
-//	}
-
 }

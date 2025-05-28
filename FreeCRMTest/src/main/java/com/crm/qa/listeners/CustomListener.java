@@ -23,7 +23,6 @@ public class CustomListener extends TestUtil implements ITestListener {
 		extent.setSystemInfo("Operating System", "Windows 11");
 		extent.setSystemInfo("Browser", "Google Chrome");
 		extent.setSystemInfo("Application", "FreeCRM");
-		
 	}
 	
 	@Override
@@ -42,8 +41,6 @@ public class CustomListener extends TestUtil implements ITestListener {
 		System.out.println("FAILED TEST");
 		TestUtil.takesScreenShotOnError(result.getMethod().getMethodName());
 		extentTest.log(Status.FAIL, "Test Failed: " + result.getThrowable().getMessage());
-		// testThread.get().log(Status.FAIL, "Test Failed: " +
-		// result.getThrowable().getMessage());
 	}
 
 	@Override

@@ -11,16 +11,6 @@ import com.crm.qa.util.TestUtil;
 
 public class EventListener extends TestUtil implements WebDriverListener {
 
-//	@Override
-//	public void beforeAnyCall(Object target, Method method, Object[] args) {
-//		System.out.println("Before calling method: " + method.getName());
-//	}
-//
-//	@Override
-//	public void afterAnyCall(Object target, Method method, Object[] args, Object result) {
-//		System.out.println("After calling method: " + method.getName());
-//	}
-
 	@Override
 	public void beforeGet(WebDriver driver, String url) {
 		System.out.println("Before navigating to URL: " + url);

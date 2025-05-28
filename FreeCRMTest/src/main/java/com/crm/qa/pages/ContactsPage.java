@@ -29,10 +29,7 @@ public class ContactsPage extends TestBase {
 	
 	@FindBy(xpath = "//button[text()='Show Filters']")
 	private WebElement filterButton;
-	
-//	@FindBy (xpath = "//button[contains(text(),'Create')]")
-//	WebElement createBtn;
-	
+		
 	NavigationMenu navigationMenu;
 	
 	public ContactsPage() {
@@ -48,7 +45,6 @@ public class ContactsPage extends TestBase {
 	public boolean PageHeading() {
 		return contactsLabel.isDisplayed();
 	}
-	
 	
 	public boolean ExportButtonDisplay() {
 		return exportButton.isDisplayed();
