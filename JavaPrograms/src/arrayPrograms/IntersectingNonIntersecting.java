@@ -1,9 +1,8 @@
 package arrayPrograms;
 
+import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 public class IntersectingNonIntersecting {
 
@@ -17,7 +16,8 @@ public class IntersectingNonIntersecting {
 	}
 
 	public static void printintersectingvalues(int[] a1, int[] a2) {
-		Set<Integer> set = new HashSet<Integer>();
+		//Set<Integer> set = new HashSet<Integer>();
+		ArrayList<Integer> set = new ArrayList<Integer>();
 		for (int i = 0; i < a1.length ; i++) {
 			for (int j = 0; j < a2.length ; j++) {
 				if (a1[i] == a2[j]) {

@@ -4,7 +4,7 @@ public class SumDigitsInNumber {
 
 	public static void main(String[] args) {
 
-		int number = 90;
+		int number = 190;
 
 		int sum = sumDigitsInNumber(number);
 		if (sum == 0) {

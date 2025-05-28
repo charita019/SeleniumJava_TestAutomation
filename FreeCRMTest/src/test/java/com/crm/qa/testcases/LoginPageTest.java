@@ -1,5 +1,8 @@
 package com.crm.qa.testcases;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterMethod;
@@ -30,7 +33,6 @@ public class LoginPageTest extends TestBase {
 	@BeforeMethod
 	public void setUp() {
 		TestBase.initialization();
-		loginPage = new LoginPage();
 		mainPage = new MainPage();
 		loginPage = mainPage.redirectToLoginPage();
 		softAssert = new SoftAssert();
@@ -48,18 +50,38 @@ public class LoginPageTest extends TestBase {
 	@Test(priority = 2)
 	public void validateLoginPageUrlTest() {
 		logger.info("********* Start Login Page URL Test********");
-		String actualurl = loginPage.getPageTitle();
+		String actualurl = loginPage.getPageUrl();
 		String expectedurl = "https://ui.cogmento.com/register/";
 		softAssert.assertEquals(actualurl, expectedurl, "Url do not match");
 		softAssert.assertAll();
 		logger.info("********* Login Page URL Test Completed********");
 	}
 
-	@Test(priority = 3)
-	public void loginTest() {
-		logger.info("******Start Login Functionality Test*******");
-		homePage = loginPage.login(prop.getProperty("useremail"), prop.getProperty("password"));
-		logger.info("******Login Functionality Test Completed*******");
+	/*
+	 * @Test(priority = 3) public void loginTest() {
+	 * logger.info("******Start Login Functionality Test*******"); homePage =
+	 * loginPage.login(prop.getProperty("useremail"), prop.getProperty("password"));
+	 * logger.info("******Login Functionality Test Completed*******"); }
+	 */
+	
+	@Test (priority = 3)
+	public void multipleLoginsTest() {
+		Map<String,String> loginData = new HashMap<String,String>();
+		loginData.put(prop.getProperty("key1"), prop.getProperty("value1"));
+		loginData.put(prop.getProperty("key2"), prop.getProperty("value2"));
+		
+		for(Map.Entry<String, String> loginDataInput : loginData.entrySet()) {
+			String username = loginDataInput.getKey();
+			String password = loginDataInput.getValue();
+			
+			loginPage.login(username, password);
+			softAssert.assertTrue(loginPage.isLoginSuccessful(), "Login failed for user : " + username);
+			softAssert.assertAll();
+			
+			loginPage.logout();
+		}
+		
+		
 	}
 
 	@AfterMethod

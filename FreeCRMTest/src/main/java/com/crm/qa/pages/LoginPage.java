@@ -1,6 +1,10 @@
 package com.crm.qa.pages;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -30,22 +34,43 @@ public class LoginPage extends TestBase{
 	@FindBy (xpath = "//a[contains(text(),'Forgot your password?']")
 	WebElement forgotPasswordLink;
 	
+	@FindBy (xpath = "//div[@role='listbox']")
+	WebElement gearIcon;
+	
 	//Initializing the Page Objects:
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	//Actions:
-//	public String getLoginPageTitle() {
-//		return driver.getTitle();
-//	}
-	
 	public HomePage login(String usernm, String pwd) {
+		useremail.clear();
 		useremail.sendKeys(usernm);
+		password.clear();
 		password.sendKeys(pwd);
 		loginBtn.click();
 		
 		return new HomePage();
+	}
+	
+	public boolean isLoginSuccessful() {
+		return driver.getTitle().contains("Cogmento CRM");
+	}
+	
+	public LoginPage logout() {
+//		Actions action = new Actions(driver);
+//		action.moveToElement(gearIcon).click().build().perform();
+		gearIcon.click();
+		
+		List<WebElement> menuList = driver.findElements(By.xpath("//a[@role='option']"));
+		
+		for(WebElement menuOption : menuList) {
+			if(menuOption.getText().contains("Log Out")) {
+				menuOption.click();
+				break;
+			}
+		}
+		
+		return new LoginPage();
 	}
 }
 
