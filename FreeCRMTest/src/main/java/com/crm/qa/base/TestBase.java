@@ -73,7 +73,7 @@ public class TestBase {
 			// Launch the application url
 			driver.get(prop.getProperty("url"));
 		} catch (Exception e) {
-			Assert.fail("Unexpected Error Occurred" + e.getMessage());
+			Assert.fail("Unexpected Error Occurred : " + e.getMessage());
 		}
 	}
 
