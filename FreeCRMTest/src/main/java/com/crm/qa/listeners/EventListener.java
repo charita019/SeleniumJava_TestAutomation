@@ -23,7 +23,7 @@ public class EventListener extends TestUtil implements WebDriverListener {
 	
 	@Override
 	public void beforeClick(WebElement element) {
-		System.out.println("Before clicking : " + element);
+		System.out.println("Before clicking : " + element.getText());
 	}
 	
 	@Override

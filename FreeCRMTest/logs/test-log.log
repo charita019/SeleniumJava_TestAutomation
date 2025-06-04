@@ -213,3 +213,144 @@
 2025-05-28 22:43:15 INFO  com.crm.qa.base.TestBase - Logger Initialized
 2025-05-28 22:43:47 INFO  com.crm.qa.testcases.ContactsPageTest - ******Start Contact Page Filter Button Test******
 2025-05-28 22:43:47 INFO  com.crm.qa.testcases.ContactsPageTest - ******Contact Page Filter Button Test Completed******
+2025-05-29 16:23:41 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-29 16:23:51 INFO  com.crm.qa.testcases.MainPageTest - ******Starting Main Page Title Test*******
+2025-05-29 16:23:51 INFO  com.crm.qa.testcases.MainPageTest - ******MAIN Page Title Test is completed*****
+2025-05-29 16:23:51 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-29 16:23:52 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-29 16:23:53 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-29 16:24:03 INFO  com.crm.qa.testcases.MainPageTest - ********Starting Main Page Url Test***********
+2025-05-29 16:24:03 INFO  com.crm.qa.testcases.MainPageTest - ********Main Page Url Test Completed***********
+2025-05-29 16:24:03 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-29 16:24:03 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-29 16:24:04 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-29 16:24:17 INFO  com.crm.qa.testcases.MainPageTest - ******Starting Start Here Click Test on Main Page********
+2025-05-29 16:24:17 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-29 16:24:18 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-29 16:25:30 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-29 16:25:40 INFO  com.crm.qa.testcases.MainPageTest - ******Starting Main Page Title Test*******
+2025-05-29 16:25:40 INFO  com.crm.qa.testcases.MainPageTest - ******MAIN Page Title Test is completed*****
+2025-05-29 16:25:40 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-29 16:25:40 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-29 16:25:41 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-29 16:25:49 INFO  com.crm.qa.testcases.MainPageTest - ********Starting Main Page Url Test***********
+2025-05-29 16:25:49 INFO  com.crm.qa.testcases.MainPageTest - ********Main Page Url Test Completed***********
+2025-05-29 16:25:49 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-29 16:25:50 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-29 16:25:51 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-29 16:26:03 INFO  com.crm.qa.testcases.MainPageTest - ******Starting Start Here Click Test on Main Page********
+2025-05-29 16:26:03 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-29 16:26:04 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-29 16:28:31 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-29 16:28:50 INFO  com.crm.qa.testcases.MainPageTest - ******Starting Start Here Click Test on Main Page********
+2025-05-29 16:29:10 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-29 16:29:10 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-30 13:51:55 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-30 13:53:41 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-30 13:53:55 INFO  com.crm.qa.testcases.MainPageTest - ******Starting Main Page Title Test*******
+2025-05-30 13:53:55 INFO  com.crm.qa.testcases.MainPageTest - ******MAIN Page Title Test is completed*****
+2025-05-30 13:53:55 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-30 13:53:55 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-30 13:53:57 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-30 13:54:11 INFO  com.crm.qa.testcases.MainPageTest - ********Starting Main Page Url Test***********
+2025-05-30 13:54:11 INFO  com.crm.qa.testcases.MainPageTest - ********Main Page Url Test Completed***********
+2025-05-30 13:54:11 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-30 13:54:11 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-30 13:54:13 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-30 13:54:26 INFO  com.crm.qa.testcases.MainPageTest - ******Starting Start Here Click Test on Main Page********
+2025-05-30 13:54:35 INFO  com.crm.qa.testcases.MainPageTest - ****Start Here click test is completed******
+2025-05-30 13:54:35 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-30 13:54:35 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-30 13:55:04 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-30 13:55:14 INFO  com.crm.qa.testcases.MainPageTest - ******Starting Main Page Title Test*******
+2025-05-30 13:55:14 INFO  com.crm.qa.testcases.MainPageTest - ******MAIN Page Title Test is completed*****
+2025-05-30 13:55:14 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-30 13:55:14 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-30 13:55:16 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-30 13:55:25 INFO  com.crm.qa.testcases.MainPageTest - ********Starting Main Page Url Test***********
+2025-05-30 13:55:25 INFO  com.crm.qa.testcases.MainPageTest - ********Main Page Url Test Completed***********
+2025-05-30 13:55:25 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-30 13:55:26 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-30 13:55:28 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-30 13:55:37 INFO  com.crm.qa.testcases.MainPageTest - ******Starting Start Here Click Test on Main Page********
+2025-05-30 13:55:41 INFO  com.crm.qa.testcases.MainPageTest - ****Start Here click test is completed******
+2025-05-30 13:55:41 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-30 13:55:42 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-30 13:56:44 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-30 13:56:59 INFO  com.crm.qa.testcases.MainPageTest - ******Starting Main Page Title Test*******
+2025-05-30 13:56:59 INFO  com.crm.qa.testcases.MainPageTest - ******MAIN Page Title Test is completed*****
+2025-05-30 13:56:59 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-30 13:57:00 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-30 13:57:02 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-30 13:57:14 INFO  com.crm.qa.testcases.MainPageTest - ********Starting Main Page Url Test***********
+2025-05-30 13:57:14 INFO  com.crm.qa.testcases.MainPageTest - ********Main Page Url Test Completed***********
+2025-05-30 13:57:14 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-30 13:57:15 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-30 13:57:17 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-30 13:57:30 INFO  com.crm.qa.testcases.MainPageTest - ******Starting Start Here Click Test on Main Page********
+2025-05-30 13:57:42 INFO  com.crm.qa.testcases.MainPageTest - ****Start Here click test is completed******
+2025-05-30 13:57:42 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-30 13:57:43 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-30 15:29:33 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-30 15:29:44 INFO  com.crm.qa.testcases.MainPageTest - ******Starting Main Page Title Test*******
+2025-05-30 15:29:44 INFO  com.crm.qa.testcases.MainPageTest - ******MAIN Page Title Test is completed*****
+2025-05-30 15:29:44 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-30 15:29:44 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-30 15:29:46 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-30 15:29:56 INFO  com.crm.qa.testcases.MainPageTest - ********Starting Main Page Url Test***********
+2025-05-30 15:29:56 INFO  com.crm.qa.testcases.MainPageTest - ********Main Page Url Test Completed***********
+2025-05-30 15:29:56 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-30 15:29:56 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-05-30 15:29:58 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-05-30 15:30:08 INFO  com.crm.qa.testcases.MainPageTest - ******Starting Start Here Click Test on Main Page********
+2025-05-30 15:30:29 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-05-30 15:30:30 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-06-04 21:46:33 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-06-04 21:46:47 INFO  com.crm.qa.testcases.MainPageTest - ******Starting Main Page Title Test*******
+2025-06-04 21:46:47 INFO  com.crm.qa.testcases.MainPageTest - ******MAIN Page Title Test is completed*****
+2025-06-04 21:46:47 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-06-04 21:46:48 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-06-04 21:46:50 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-06-04 21:47:00 INFO  com.crm.qa.testcases.MainPageTest - ********Starting Main Page Url Test***********
+2025-06-04 21:47:00 INFO  com.crm.qa.testcases.MainPageTest - ********Main Page Url Test Completed***********
+2025-06-04 21:47:00 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-06-04 21:47:00 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-06-04 21:47:02 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-06-04 21:47:16 INFO  com.crm.qa.testcases.MainPageTest - ******Starting Start Here Click Test on Main Page********
+2025-06-04 21:47:21 INFO  com.crm.qa.testcases.MainPageTest - ****Start Here click test is completed******
+2025-06-04 21:47:21 INFO  com.crm.qa.testcases.MainPageTest - ***Starting Browser Quit***
+2025-06-04 21:47:22 INFO  com.crm.qa.testcases.MainPageTest - ***Browser Quit completed successfully****
+2025-06-04 21:47:24 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-06-04 21:47:38 INFO  com.crm.qa.testcases.LoginPageTest - ******Start Login Page Title Test*******
+2025-06-04 21:47:38 INFO  com.crm.qa.testcases.LoginPageTest - ******Login Page Title Test Completed*******
+2025-06-04 21:47:38 INFO  com.crm.qa.testcases.LoginPageTest - ****** Browser Quit Initiated******
+2025-06-04 21:47:38 INFO  com.crm.qa.testcases.LoginPageTest - ***** Browser Quit Completed*********
+2025-06-04 21:47:40 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-06-04 21:48:01 INFO  com.crm.qa.testcases.LoginPageTest - ********* Start Login Page URL Test********
+2025-06-04 21:48:01 INFO  com.crm.qa.testcases.LoginPageTest - ********* Login Page URL Test Completed********
+2025-06-04 21:48:01 INFO  com.crm.qa.testcases.LoginPageTest - ****** Browser Quit Initiated******
+2025-06-04 21:48:02 INFO  com.crm.qa.testcases.LoginPageTest - ***** Browser Quit Completed*********
+2025-06-04 21:48:03 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-06-04 21:48:36 INFO  com.crm.qa.testcases.LoginPageTest - ****** Browser Quit Initiated******
+2025-06-04 21:48:36 INFO  com.crm.qa.testcases.LoginPageTest - ***** Browser Quit Completed*********
+2025-06-04 21:48:38 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-06-04 21:49:04 INFO  com.crm.qa.testcases.HomePageTest - ******Start Home Page Title Test*******
+2025-06-04 21:49:04 INFO  com.crm.qa.testcases.HomePageTest - ******Home Page Title Test Completed*******
+2025-06-04 21:49:10 INFO  com.crm.qa.testcases.HomePageTest - ******Start Home Page Url Test*******
+2025-06-04 21:49:10 INFO  com.crm.qa.testcases.HomePageTest - ******Home Page Url Test Completed*******
+2025-06-04 21:49:18 INFO  com.crm.qa.testcases.HomePageTest - ******Start LoggedInUserName Test*******
+2025-06-04 21:49:19 INFO  com.crm.qa.testcases.HomePageTest - ******LoggedInUserName Test Completed*******
+2025-06-04 21:49:26 INFO  com.crm.qa.testcases.ContactsPageTest - ******Start Contact Page Title Test******
+2025-06-04 21:49:26 INFO  com.crm.qa.testcases.ContactsPageTest - ******Contact Page Title Test Completed******
+2025-06-04 21:49:29 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-06-04 21:49:48 INFO  com.crm.qa.testcases.ContactsPageTest - ******Start Contact Page Url Test******
+2025-06-04 21:49:48 INFO  com.crm.qa.testcases.ContactsPageTest - ******Contact Page Url Test Completed******
+2025-06-04 21:49:50 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-06-04 21:50:15 INFO  com.crm.qa.testcases.ContactsPageTest - ******Start Contact Page Heading Label Test******
+2025-06-04 21:50:15 INFO  com.crm.qa.testcases.ContactsPageTest - ******Contact Page Heading Label Test Completed******
+2025-06-04 21:50:17 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-06-04 21:50:40 INFO  com.crm.qa.testcases.ContactsPageTest - ****** Start Contact Page Export Button Test******
+2025-06-04 21:50:40 INFO  com.crm.qa.testcases.ContactsPageTest - ******Contact Page Export Button Test Completed******
+2025-06-04 21:50:42 INFO  com.crm.qa.base.TestBase - Logger Initialized
+2025-06-04 21:51:02 INFO  com.crm.qa.testcases.ContactsPageTest - ******Start Contact Page Filter Button Test******
+2025-06-04 21:51:03 INFO  com.crm.qa.testcases.ContactsPageTest - ******Contact Page Filter Button Test Completed******

@@ -12,7 +12,6 @@ import com.crm.qa.base.TestBase;
 import com.crm.qa.listeners.CustomListener;
 import com.crm.qa.pages.LoginPage;
 import com.crm.qa.pages.MainPage;
-import com.crm.qa.util.TestUtil;
 
 @Listeners(CustomListener.class)
 public class MainPageTest extends TestBase {
@@ -22,7 +21,6 @@ public class MainPageTest extends TestBase {
 	 */
 	MainPage mainPage; // object ref of the page class.
 	LoginPage loginPage;
-	TestUtil testUtil;
 
 	private static final Logger logger = LogManager.getLogger(MainPageTest.class);
 
@@ -40,6 +38,7 @@ public class MainPageTest extends TestBase {
 		TestBase.initialization();
 		mainPage = new MainPage(); // to call the methods of the page class by creating object of the page class
 		softAssert = new SoftAssert();
+		
 	}
 
 	@Test(priority = 1)

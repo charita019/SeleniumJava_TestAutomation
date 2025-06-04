@@ -12,15 +12,15 @@ import org.testng.annotations.Test;
 
 public class TestNgBasics {
 	//Pre - Condition Annotations - Starts with @Before : Part 1
-	@BeforeSuite //1
-	public void setup() {
-		System.out.println("Setup system property for chrome");
-	}
-	
-	@BeforeTest //2
-	public void launchBrowser() {
-		System.out.println("Launch Chrome Browser");
-	}
+//	@BeforeSuite //1
+//	public void setup() {
+//		System.out.println("Setup system property for chrome");
+//	}
+//	
+//	@BeforeTest //2
+//	public void launchBrowser() {
+//		System.out.println("Launch Chrome Browser");
+//	}
 	
 	@BeforeClass //3
 	public void login() {
@@ -29,43 +29,43 @@ public class TestNgBasics {
 	
 	@BeforeMethod //4
 	public void enterURL() {
-		System.out.println("Enter URL");
+		System.out.println("Enter URL - TestNGBasics");
 	}
 	
 	//Test Case - @Test Annotation - Part 2
 	@Test //5
 	public void googleTitleTest() {
-		System.out.println("Google Title Test");
+		System.out.println("Google Title Test - TestNGBasics");
 	}
 	
 	@Test
 	public void searchTest() {
-		System.out.println("Search Test");
+		System.out.println("Search Test - TestNGBasics");
 	}
 	
 	@Test
 	public void googleLogoTest() {
-		System.out.println("Google logo test");
+		System.out.println("Google logo test - TestNGBasics");
 	}
 	
 	//Post Conditions - After Test : starts with @After : Part3
 	@AfterMethod //6
 	public void logOut() {
-		System.out.println("Logout from the App");
+		System.out.println("Logout from the App - TestNGBasics");
 	}
 	
 	@AfterClass //7
 	public void closeBrowser() {
-		System.out.println("Close Browser");
+		System.out.println("Close Browser - TestNGBasics");
 	}
 	
-	@AfterTest //8
-	public void deleteAllCookies() {
-		System.out.println("delete all cookies");
-	}
-	
-	@AfterSuite //9
-	public void generateTestReport(){
-		System.out.println("Generate test report");
-	}
+//	@AfterTest //8
+//	public void deleteAllCookies() {
+//		System.out.println("delete all cookies");
+//	}
+//	
+//	@AfterSuite //9
+//	public void generateTestReport(){
+//		System.out.println("Generate test report");
+//	}
 }

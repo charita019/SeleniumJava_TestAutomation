@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumJava.program">
+      <class name="seleniumJava.PaginationAutomationLambdaTest">
         <methods>
+          <include name="getProductDetails"/>
           <include name="setUp"/>
-          <include name="requirement5"/>
+          <include name="tearDown"/>
+          <include name="CameraPage"/>
         </methods>
-      </class> <!-- seleniumJava.program -->
+      </class> <!-- seleniumJava.PaginationAutomationLambdaTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

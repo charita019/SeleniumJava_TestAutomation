@@ -9,10 +9,10 @@ public class TestNgAnnotations2 {
 		System.out.println("I am before suite -2");
 	}
 	
-	@BeforeTest
-	public void BeforeTestMethod2() {
-		System.out.println("I am before test - 2");
-	}
+//	@BeforeTest
+//	public void BeforeTestMethod2() {
+//		System.out.println("I am before test - 2");
+//	}
 	
 	@BeforeClass
 	public void BeforeClassMethod2() {
@@ -40,10 +40,10 @@ public class TestNgAnnotations2 {
 		System.out.println("I am after suite -2");
 	}
 	
-	@AfterTest
-	public void AfterTestMethod() {
-		System.out.println("I am after test -2 ");
-	}
+//	@AfterTest
+//	public void AfterTestMethod() {
+//		System.out.println("I am after test -2 ");
+//	}
 	
 	@AfterClass
 	public void AfterClassMethod2() {
